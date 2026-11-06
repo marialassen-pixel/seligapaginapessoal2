@@ -34,6 +34,35 @@ Escola">
 
 <!--conteudo-->
 
+<!-- O JOGO DEVE SER INSERIDO ENTRE O SEU CABEÇALHO E RODAPÉ -->
+<main class="game-container">
+    <div class="game-wrapper">
+        <!-- Tela Inicial -->
+        <div id="start-screen" class="game-overlay">
+            <h1>Retro Racer</h1>
+            <p>Use as setas ◄ ► ou as teclas A / D para desviar dos carros!</p>
+            <button id="start-btn">Jogar</button>
+        </div>
+
+        <!-- Tela de Game Over -->
+        <div id="game-over-screen" class="game-overlay hidden">
+            <h1>Fim de Jogo!</h1>
+            <p>Pontuação: <span id="final-score">0</span></p>
+            <button id="restart-btn">Correr Novamente</button>
+        </div>
+
+        <!-- Painel de Pontos Lateral/Superior -->
+        <div class="game-hud">
+            Pontos: <span id="score-display">0</span>
+        </div>
+
+        <!-- Tela do Jogo -->
+        <canvas id="gameCanvas" width="400" height="500"></canvas>
+    </div>
+</main>
+
+
+
 
 <!--Seção rodapé é a parte final da paragrafo 3 da página-->
 <footer class="escola">
@@ -48,3 +77,7 @@ Política de Privacidade | Proteção de dados | Encarregado de dados</p>
 </footer>
 </body>
 </html>
+
+
+<!-- Lembre-se de verificar se o script está referenciado no final do body ou no head -->
+<script src="script.js"></script>
